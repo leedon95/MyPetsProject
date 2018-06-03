@@ -5,55 +5,530 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="MaruFrame.css" rel="stylesheet">
-    
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
 <style>
-    .header{
-        width: 100%;
-        height: 320px;
-        background-color:#ccc;
-    }
+
+        #hambergerBox
+        {
+            display: none;
+            height: 0px;
+            overflow: hidden;
+        }
+
+    @media screen and (min-width:1100px)
+        {
+            .header
+            {
+                margin-top: 150px;
+                height: 510px;
+                background:url('IMG/HeaderBG.png');
+                background-size: 100% 100%;
+            }
+        }
 
 
+    @media screen and (max-width:1100px)
+        {
+            .header
+            {
+                margin-top: 80px;
+                height: 400px;
+                background:url('IMG/HeaderBG.png');
+                background-size: 100% 100%;
+            }
+        }
+
+    @media screen and (max-width:780px)
+        {
+            .header
+            {
+                margin-top: 0px;
+                height: 220px;
+                background:url('IMG/HeaderBG.png');
+                background-size: 100% 100%;
+            }
+        }
 
     /* 여기서부터 top-nav */
+    
+@media screen and (min-width : 1920px){
 
     .top-nav {
         position : fixed;
         top : 0%;
         widows : 100%;
-        background-color : #eee;
-        height : 50px;
+        background-color : #000;
+        height : 160px;
         width : 100%;
         border-bottom : 1px solid #666;
     }
 
-    .top-nav-main {
-        font-size:22px;
-        padding: 8px 0 0 0;
-        width:200px;
+    .top-nav .top-nav-main {
+        font-size:80px;
+        padding: 20px 0 0 40px;
+        width:auto;
+        color:#fff;
+        text-decoration:none;
+        float: left;
     }
 
-    ul {
+    .top-nav ul {
         list-style:none;
         margin:0;
         padding:0;
     }
 
-    li {
+    .top-nav li {
         text-align: center;
-        width:150px;
-        margin: 0 0 0 0;
-        padding: 15px 0 0 0;
+        width:auto;
+        margin: 0 30px 0 30px;
+        font-size:20px;
+        padding: 80px 0 0 0;
         border : 0;
         float: left;
     }
-    li a {
+    .top-nav li a {
         text-decoration: none;
-
+        color:#eee;
     }
 
+}
+    @media screen and (max-width : 1920px){
 
+        .top-nav {
+            position : fixed;
+            top : 0%;
+            widows : 100%;
+            background-color : #000;
+            height : 160px;
+            width : 100%;
+            border-bottom : 1px solid #666;
+        }
+
+        .top-nav .top-nav-main {
+            font-size:80px;
+            padding: 20px 0 0 40px;
+            width:auto;
+            color:#fff;
+            text-decoration:none;
+            float: left;
+        }
+
+        .top-nav ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+
+        .top-nav li {
+            text-align: center;
+            width:auto;
+            margin: 0 30px 0 30px;
+            font-size:20px;
+            padding: 80px 0 0 0;
+            border : 0;
+            float: left;
+        }
+        .top-nav li a {
+            text-decoration: none;
+                    color:#eee;
+        }
+    }
+
+    @media screen and (max-width : 1250px){
+
+        .top-nav {
+            position : fixed;
+            top : 0%;
+            widows : 100%;
+            background-color : #000;
+            height : 160px;
+            width : 100%;
+            border-bottom : 1px solid #666;
+        }
+
+        .top-nav .top-nav-main {
+            font-size:70px;
+            padding: 30px 0 0 25px;
+            width:auto;
+            color:#fff;
+            text-decoration:none;
+            float: left;
+        }
+
+        .top-nav ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+
+        .top-nav li
+        {
+            text-align: center;
+            width:auto;
+            margin: 0 25px 0 25px;
+            font-size:18px;
+            padding: 80px 0 0 0;
+            border : 0;
+            float: left;
+        }
+        .top-nav li a
+        {
+            text-decoration: none;
+            color:#eee;
+        }
+    }
+
+     @media screen and (max-width : 1100px){
+
+        .top-nav {
+            position : fixed;
+            top : 0%;
+            widows : 100%;
+            background-color : #000;
+            height : 70px;
+            width : 100%;
+            border-bottom : 1px solid #666;
+        }
+
+        .top-nav .top-nav-main {
+            font-size:40px;
+            padding: 5px 0 0 5px;
+            width:auto;
+            color:#fff;
+            text-decoration:none;
+            float: left;
+        }
+
+
+        .top-nav ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+
+        .top-nav li {
+            text-align: center;
+            width : auto;
+            margin : 0 16px 0 16px;
+            font-size : 18px;
+            padding : 25px 0 0 0;
+            border : 0;
+            float : left;
+        }
+        .top-nav li a {
+            text-decoration: none;
+            color:#eee;
+        }
+    }
+
+    @media screen and (max-width : 850px){
+
+        .top-nav {
+            position : fixed;
+            top : 0%;
+            widows : 100%;
+            background-color : #000;
+            height : 70px;
+            width : 100%;
+            border-bottom : 1px solid #666;
+        }
+
+        .top-nav .top-nav-main {
+            font-size:40px;
+            padding: 5px 0 0 15px;
+            width:auto;
+            color:#fff;
+            text-decoration:none;
+            float: left;
+        }
+
+        .top-nav ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+
+        .top-nav li {
+            text-align: center;
+            width : auto;
+            margin : 0 13px 0 13px;
+            font-size : 18px;
+            padding : 25px 0 0 0;
+            border : 0;
+            float : left;
+        }
+        .top-nav li a
+        {
+            text-decoration: none;
+            color:#eee;
+        }
+    }
+
+    @media screen and (max-width : 780px) /* 햄버거 버튼 */
+    { 
+
+        .top-nav {
+            position :relative;
+            top : 0%;
+            widows : 100%;
+            background-color : #000;
+            height : 70px;
+            width : 100%;
+            border-bottom : 1px solid #666;
+        }
+
+        .top-nav .top-nav-main {
+            font-size:40px;
+            padding: 10px 0 0 15px;
+            color:#fff;
+            text-decoration:none;
+            float: left;
+        }
+
+        .top-nav ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+
+        .top-nav li {
+            /*background-color:#000;*/
+            text-align: left;
+            margin : 0 10px 0 10px;
+            font-size : 14px;
+            padding : 15px 0 0 0;
+            border : 0;
+            float:none;
+        }
+        .top-nav li a {
+            text-decoration: none;
+            color:#eee;
+        }
+
+        #hambergerBox
+        {
+            display: block;
+            height: 0px;
+            overflow: unset;
+        }
+
+        #panel
+        {
+            margin-top:-20px;
+            padding-bottom:10px;
+            padding-left:10px;
+            width: 100%;
+            background-color:#000;
+            float: left;
+        }
+    }
+
+/* 햄버거 버튼 */
+
+    .mobileToggle
+        {
+            margin-top:15px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+
+    .mobileToggle,
+    .mobileToggle span 
+        {
+            display: inline-block;
+            transition: all .4s;
+            box-sizing: border-box;
+        }
+
+    .mobileToggle {
+            position: relative;
+            width: 50px;
+            height: 34px;
+        }
+
+     .mobileToggle span 
+        {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+    .mobileToggle span:nth-of-type(1) 
+        {
+            top: 0;
+        }
+
+    .mobileToggle span:nth-of-type(2) 
+        {
+            top: 15px;
+        }
+
+    .mobileToggle span:nth-of-type(3) 
+        {
+            bottom: 0;
+        }
+
+        /* type-01 */
+        /* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
+    .mobileToggle.active-1 span:nth-of-type(1)
+        {
+            -webkit-transform: translateY (15px) rotate (-45deg);
+            transform: translateY(15px) rotate(-45deg);
+        }
+
+    .mobileToggle.active-1 span:nth-of-type(2)
+        {
+            opacity: 0;
+        }
+
+    .mobileToggle.active-1 span:nth-of-type(3)
+        {
+            -webkit-transform: translateY(-15px) rotate(45deg);
+             transform: translateY(-15px) rotate(45deg);
+        }
+
+
+    /* 테이블 위 글씨 */
+
+    h2
+        {
+            font-size:34px;
+            width: 200px;
+            padding-bottom : 20px;
+            border-bottom : 2px solid #000; 
+        }
+
+    /* 테이블 디자인 */
+
+    table
+        {
+            width : 100%;
+            height: auto;
+            border-top: 1px solid #aaa;
+            border-bottom: 1px solid #aaa;
+            text-align: center;
+        }
+
+    tr
+        {
+            background-color: #fff;
+        }
+
+    tr:first-child
+        {
+            background-color: #ffd6d6;
+        }
+
+    tr:last-child
+        {
+            background-color: #ffd6d6;
+            font-size:0px;
+        }
+
+    tr:nth-child(2n)
+        {
+            background-color: #eee;
+        }
+
+    table th
+        {
+            padding : 15px 0 15px 0;
+            font-size : 16px;
+            text-align : center;
+            font-weight: normal;
+            text-align: center;
+        }
+
+    table td
+        {
+            padding : 15px 0 15px 0;
+            font-size : 16px;
+            text-align : center;
+        }
+
+    /* 테이블 최상단 */
+
+    #num, #views
+        {
+            width : 10%;
+        }
+
+    #title
+        {
+            width : 50%;
+        }
+
+    #writer, #registDay
+        {
+            width : 15%;
+        }
+
+    /* 바텀 페이징 */
+
+    #Paging
+        {
+            display: inline-block;
+            padding : 0px;
+            margin : 0px;
+            font-size:0px;
+        }
+
+    #Paging li input[type="image"]
+        {
+            padding-bottom:5px;
+            width:40px;
+            cursor:pointer;
+        }
+
+    #prev::after
+        {
+            content:"Prev";
+            cursor:pointer;
+        }
+
+    #next::before
+        {
+            content:"Next";
+            cursor:pointer;
+        }
+
+    #Paging ul
+        {
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+
+    #Paging li
+        {
+            list-style:none;
+            text-align: center;
+            width:auto;
+            margin: 0 10px 0 10px;
+            font-size:20px;
+            float: left;
+        }
+
+    #Paging li a
+        {
+            text-decoration: none;
+            color:#000;
+        }
+/*
+    #panel
+        {
+            float: left;
+        }
+*/
 
 </style>
 
@@ -61,35 +536,107 @@
 <body>
 
     <div class="top-nav">
-        <ul>
-            <li class="top-nav-main"><a href="#">My Pets</a></li>
+
+        <div id="hambergerBox">
+            <a class="mobileToggle" href="#" style="float:right;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <a href="#" class="top-nav-main">PetNawa</a>
+
+        <ul id="panel">
             <li><a href="#">냥이 소식</a></li>
-            <li><a href="#">냥이 갤러리</a></li>
+            <li><a href="Nyangs/NyangGallery.html">냥이 갤러리</a></li>
             <li><a href="#">우리집 냥이</a></li>
             <li><a href="#">고양이 사진</a></li>
-            <li><a href="#">고양이 분양</a></li>
+            <li><a href="Nyangs/GetNyang.html">고양이 분양</a></li>
         </ul>
+        
     </div>
 
-    <header class="header">
+    <header class="header"></header> <!-- 이미지 들어가는 곳 -->
 
-    </header>
-
-
-
-
-    <div class="GalleryBody" style="height:1000px">
+    <div class="GalleryBody" style="min-height:700px; margin-top:-20px;">
         <center>
-            <h2>냥스에 오신걸 환영합니다!</h2>
+            <h2>Nyangs</h2>
         </center>
 
+        <table border = "0" cellspacing="0">
+                <tr>
+                    <th id="num"> <!-- 가장 첫단은 ID 값으로 -->
+                        번호
+                    </th>
+                    <th id="title">
+                        제목
+                    </th>
+                    <th id="writer">
+                        작성자
+                    </th>
+                    <th id="registDay">
+                        작성날짜
+                    </th>
+                    <th id="views">
+                        조회
+                    </th>
+                </tr>
 
-        <article class="">
+                <script>
+                    for(var i=1; i<=20; i++) {
+                        document.write("<tr><td class='num'>" + i + "</td><td>제목</td><td>d</td><td>d</td><td>5</td></tr>");
+                    }
+                </script>
+                
+                <tr>
+                    <th colspan="5">
+                        <ul id="Paging">
+                            <label>
+                                <li id="prev">
+                                    <input type="image" src="IMG/prev.png">
+                                </li>
+                            </label>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                3
+                            </li>
+                            <li>
+                                4
+                            </li>
+                            <li>
+                                5
+                            </li>
+                            <label>
+                                <li id="next">
+                                    <input type="image" src="IMG/next.png">
+                                </li>
+                            </label>    
+                        </ul>
+                    </th>
+                </tr>
 
-        </article>
+            </table>
 
-    </div>
+    </body>
 
+    <script type="text/javascript">
+    var burger = $('.mobileToggle');
 
-</body>
+    burger.each(function(index){
+        var $this = $(this);
+        
+        $this.on('click', function(e){
+            e.preventDefault();
+            $(this).toggleClass('active-' + (index+1));
+                $("#panel").slideToggle("slow");
+        })
+    });
+    </script>
+
 </html>

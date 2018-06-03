@@ -118,197 +118,224 @@
 }
 
   /* 여기서부터 이미지 갤러리*/
+  @media screen and (min-width:1920px){ /*사이즈에 따른 크기 조절 */
+    .GalleryBody{
+      background-color:#ffffff; /*백그라운드 컬러 흰색*/
+      width:1190px;  /*바디 좌우 너비*/
+      height:auto; /*바디 상하 크기 자동 조절 */
+      margin:30px auto; /*위로부터 30px만큼 멀어집니다.*/
+      padding: 20px 20px 20px 20px; /*갤러리 내 이미지들로부터 20px만큼씩 공간을 둡니다.*/
+      border:1px solid #e5e5e5; /*테두리*/
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*그림자 효과를 줌으로써 바디를 부각시킵니다.*/}
+  
+    div.IMGgallery3 { /*갤러리 3을 3개 쓰면 한 행에 이미지 3개 출력이 가능합니다.*/
+      background-color: #efefef; /*백그라운드 컬러*/
+      margin: 20px; /*이미지와 이미지들간의 간격입니다.*/
+      border: 2px solid #fff; /*이미지의 테두리*/
+      float: left; /*이 태그를 절대 지우면 안됩니다. 왼쪽부터 이미지 정렬*/
+      width: 350px; /*이미지의 크기*/
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*이미지에 그림자 효과를 줍니다.*/
+      transition-duration: 1s; /*이미지들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+  
+    div.IMGgallery2 { /*갤러리 2를 2개 쓰면 한 행에 이미지 2개 출력이 가능합니다.*/
+      background-color: #efefef; /*백그라운드 컬러*/
+      margin: 20px; /*이미지와 이미지들간의 간격입니다.*/
+      border: 2px solid #fff; /*이미지의 테두리*/
+      float: left; /*이 태그를 절대 지우면 안됩니다. 왼쪽부터 이미지 정렬*/
+      width: 550px; /*이미지의 크기*/
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*이미지에 그림자 효과를 줍니다.*/
+      transition-duration: 1s; /*이미지들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+  }
 
+  @media screen and (max-width:1920px){
+    .GalleryBody{
+      background-color:#ffffff;
+      width:1190px;
+      height:auto;
+      margin:30px auto;
+      padding: 20px 20px 20px 20px;
+      border:1px solid #e5e5e5;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
 
-@media screen and (max-width:1920px){ /*사이즈에 따른 크기 조절 */
-  .GalleryBody{
-    background-color:#ffffff; /*백그라운드 컬러 흰색*/
-    width:1190px;  /*바디 좌우 너비*/
-    height:auto; /*바디 상하 크기 자동 조절 */
-    margin:30px auto; /*위로부터 30px만큼 멀어집니다.*/
-    padding: 20px 20px 20px 20px; /*갤러리 내 이미지들로부터 20px만큼씩 공간을 둡니다.*/
-    border:1px solid #e5e5e5; /*테두리*/
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*그림자 효과를 줌으로써 바디를 부각시킵니다.*/}
+    div.IMGgallery3 {
+      background-color: #efefef;
+      margin: 20px;
+      border: 2px solid #fff;
+      float: left;
+      width: 350px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
 
-  div.IMGgallery3 { /*갤러리 3을 3개 쓰면 한 행에 이미지 3개 출력이 가능합니다.*/
-    background-color: #efefef; /*백그라운드 컬러*/
-    margin: 20px; /*이미지와 이미지들간의 간격입니다.*/
-    border: 2px solid #fff; /*이미지의 테두리*/
-    float: left; /*이 태그를 절대 지우면 안됩니다. 왼쪽부터 이미지 정렬*/
-    width: 350px; /*이미지의 크기*/
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*이미지에 그림자 효과를 줍니다.*/
-    transition-duration: 1s; /*이미지들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+    div.IMGgallery2 {
+      background-color: #efefef;
+      margin: 20px;
+      border: 2px solid #fff;
+      float: left;
+      width: 550px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
+  }
 
-  div.IMGgallery2 { /*갤러리 2를 2개 쓰면 한 행에 이미지 2개 출력이 가능합니다.*/
-    background-color: #efefef; /*백그라운드 컬러*/
-    margin: 20px; /*이미지와 이미지들간의 간격입니다.*/
-    border: 2px solid #fff; /*이미지의 테두리*/
-    float: left; /*이 태그를 절대 지우면 안됩니다. 왼쪽부터 이미지 정렬*/
-    width: 550px; /*이미지의 크기*/
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*이미지에 그림자 효과를 줍니다.*/
-    transition-duration: 1s; /*이미지들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
-}
+  @media screen and (max-width:1200px){ /*사이즈에 따른 크기 조절 */
+    .GalleryBody{
+      background-color:#ffffff;
+      width:980px;
+      height:auto;
+      margin:30px auto;
+      padding: 15px 15px 15px 15px;
+      border:1px solid #e5e5e5;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
 
-@media screen and (max-width:1200px){ /*사이즈에 따른 크기 조절 */
-  .GalleryBody{
-    background-color:#ffffff;
-    width:980px;
-    height:auto;
-    margin:30px auto;
-    padding: 15px 15px 15px 15px;
-    border:1px solid #e5e5e5;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+  div.IMGgallery3 {
+      background-color: #efefef;
+      margin: 10px;
+      border: 2px solid #fff;
+      float: left;
+      width: 300px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
 
-div.IMGgallery3 {
-    background-color: #efefef;
-    margin: 10px;
-    border: 2px solid #fff;
-    float: left;
-    width: 300px;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
+  div.IMGgallery2 {
+      background-color: #efefef;
+      margin: 20px;
+      border: 2px solid #fff;
+      float: left;
+      width: 440px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
+  }
 
-div.IMGgallery2 {
-    background-color: #efefef;
-    margin: 20px;
-    border: 2px solid #fff;
-    float: left;
-    width: 440px;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
-}
+  @media screen and (max-width:1000px){ /*사이즈에 따른 크기 조절 */
+    .GalleryBody{
+      background-color:#ffffff;
+      width:770px;
+      height:auto;
+      margin:30px auto;
+      padding: 15px 15px 15px 15px;
+      border:1px solid #e5e5e5;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
 
-@media screen and (max-width:1000px){ /*사이즈에 따른 크기 조절 */
-  .GalleryBody{
-    background-color:#ffffff;
-    width:770px;
-    height:auto;
-    margin:30px auto;
-    padding: 15px 15px 15px 15px;
-    border:1px solid #e5e5e5;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+  div.IMGgallery3 {
+      background-color: #efefef;
+      margin: 10px;
+      border: 2px solid #fff;
+      float: left;
+      width: 230px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
 
-div.IMGgallery3 {
-    background-color: #efefef;
-    margin: 10px;
-    border: 2px solid #fff;
-    float: left;
-    width: 230px;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
+  div.IMGgallery2 {
+      background-color: #efefef;
+      margin: 15px;
+      border: 2px solid #fff;
+      float: left;
+      width: 350px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
+  }
 
-div.IMGgallery2 {
-    background-color: #efefef;
-    margin: 15px;
-    border: 2px solid #fff;
-    float: left;
-    width: 350px;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
-}
+  @media screen and (max-width:780px){ /*사이즈에 따른 크기 조절 */
+    .GalleryBody{
+      background-color:#ffffff;
+      width:600px;
+      height:auto;
+      margin:30px auto;
+      padding: 15px 15px 15px 15px;
+      border:1px solid #e5e5e5;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
 
-@media screen and (max-width:780px){ /*사이즈에 따른 크기 조절 */
-  .GalleryBody{
-    background-color:#ffffff;
-    width:600px;
-    height:auto;
-    margin:30px auto;
-    padding: 15px 15px 15px 15px;
-    border:1px solid #e5e5e5;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+  div.IMGgallery3 {
+      background-color: #efefef;
+      margin: 10px;
+      border: 2px solid #fff;
+      float: left;
+      width: 170px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
 
-div.IMGgallery3 {
-    background-color: #efefef;
-    margin: 10px;
-    border: 2px solid #fff;
-    float: left;
-    width: 170px;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
+  div.IMGgallery2 {
+      background-color: #efefef;
+      margin: 15px;
+      border: 2px solid #fff;
+      float: left;
+      width: 260px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
+  }
 
-div.IMGgallery2 {
-    background-color: #efefef;
-    margin: 15px;
-    border: 2px solid #fff;
-    float: left;
-    width: 260px;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
-}
+  @media screen and (max-width:650px){ /*사이즈에 따른 크기 조절 */
+    .GalleryBody{
+      background-color:#ffffff;
+      width:450px;
+      height:auto;
+      margin:30px auto;
+      padding: 15px 15px 15px 15px;
+      border:1px solid #e5e5e5;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
 
-@media screen and (max-width:650px){ /*사이즈에 따른 크기 조절 */
-  .GalleryBody{
-    background-color:#ffffff;
-    width:450px;
-    height:auto;
-    margin:30px auto;
-    padding: 15px 15px 15px 15px;
-    border:1px solid #e5e5e5;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+  div.IMGgallery3 {
+      background-color: #efefef;
+      margin: 5px;
+      border: 2px solid #fff;
+      float: left;
+      width: 135px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
 
-div.IMGgallery3 {
-    background-color: #efefef;
-    margin: 5px;
-    border: 2px solid #fff;
-    float: left;
-    width: 135px;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
+  div.IMGgallery2 {
+      background-color: #efefef;
+      margin: 10px;
+      border: 2px solid #fff;
+      float: left;
+      width: 200px;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
+  }
 
-div.IMGgallery2 {
-    background-color: #efefef;
-    margin: 10px;
-    border: 2px solid #fff;
-    float: left;
-    width: 200px;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
-}
+  @media screen and (max-width:470px){ /*사이즈에 따른 크기 조절 */
+    .GalleryBody{
+      background-color:#ffffff;
+      width:300px;
+      height:auto;
+      padding: 10px 10px 10px 10px;
+      border:1px solid #e5e5e5;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
 
-@media screen and (max-width:470px){ /*사이즈에 따른 크기 조절 */
-  .GalleryBody{
-    background-color:#ffffff;
-    width:300px;
-    height:auto;
-    padding: 10px 10px 10px 10px;
-    border:1px solid #e5e5e5;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+  div.IMGgallery3 {
+      background-color: #efefef;
+      margin: 5px;
+      border: 2px solid #fff;
+      width:95%;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
 
-div.IMGgallery3 {
-    background-color: #efefef;
-    margin: 5px;
-    border: 2px solid #fff;
-    width:95%;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
+  div.IMGgallery2 {
+      background-color: #efefef;
+      margin: 5px;
+      border: 2px solid #fff;
+      width: 95%;
+      box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+      transition-duration: 1s;}
+  }
 
-div.IMGgallery2 {
-    background-color: #efefef;
-    margin: 5px;
-    border: 2px solid #fff;
-    width: 95%;
-    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
-    transition-duration: 1s;}
-}
+  div.IMGgallery3:hover, /*마우스 올림시 효과 */
+  div.IMGgallery2:hover {
+      border: 2px solid #333; /*테두리*/
+      -ms-transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
+      -webkit-transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
+      transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
+      transition-duration: 1s; /*애니메이션 진행시간 1초 */
+  }
+  div.IMGgallery3 img,
+  div.IMGgallery2 img {
+      width: 100%; /*이미지들을 div갤러리 크기에 맞게 조절해줍니다. 없애면 안됩니다.*/
+      height: auto; /*이미지들을 div갤러리 크기에 맞게 조절해줍니다. 없애면 안됩니다.*/
+  }
 
-div.IMGgallery3:hover, /*마우스 올림시 효과 */
-div.IMGgallery2:hover {
-    border: 2px solid #333; /*테두리*/
-    -ms-transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
-    -webkit-transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
-    transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
-    transition-duration: 1s; /*애니메이션 진행시간 1초 */
-}
-div.IMGgallery3 img,
-div.IMGgallery2 img {
-    width: 100%; /*이미지들을 div갤러리 크기에 맞게 조절해줍니다. 없애면 안됩니다.*/
-    height: auto; /*이미지들을 div갤러리 크기에 맞게 조절해줍니다. 없애면 안됩니다.*/
-}
-
-div.desc { /*이미지 갤러리 하단에 글씨 출력 */
-    padding: 15px; /*여백효과*/
-    text-align: center; /*가운데 정렬*/
-}
+  div.desc { /*이미지 갤러리 하단에 글씨 출력 */
+      padding: 15px; /*여백효과*/
+      text-align: center; /*가운데 정렬*/
+  }
 
   /* 여기서부터 패럴랙스 스크롤링 */
 
